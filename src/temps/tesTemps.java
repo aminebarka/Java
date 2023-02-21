@@ -1,3 +1,5 @@
+package temps;
+
 import java.util.Scanner;
 
 public class tesTemps {

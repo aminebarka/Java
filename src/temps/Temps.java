@@ -1,3 +1,5 @@
+package temps;
+
 public class Temps {
     private  int heurs  ;
    private int minutes  ;
