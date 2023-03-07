@@ -37,8 +37,9 @@ public class Pile<T> {
         if (nbeElement == 0) {
             throw new PileVide();
         }
-        T element = tableau[nbeElement];
-        tableau[nbeElement--] = null;
+        T element = tableau[nbeElement-1];
+        tableau[nbeElement-1] = null;
+        nbeElement-- ;
         return element;
     }
 
@@ -52,7 +53,7 @@ public class Pile<T> {
 
     public void afficher() {
         System.out.print("[ ");
-        for (int i = nbeElement; i >= 0; i--) {
+        for (int i = nbeElement-1; i >= 0; i--) {
             System.out.print(tableau[i] + " ");
         }
         System.out.println("]");
